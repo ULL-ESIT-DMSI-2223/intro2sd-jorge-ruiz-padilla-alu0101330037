@@ -4,6 +4,7 @@
     "colores": {
         "alumnos": ["guillermo", "jorge", "patricia"],
         "color": ["rojo","verde","azul"],
-        "texto": "seccion de colores"
+        "texto": "seccion de colores",
+        "nota": [1, 5, 6]
     }
 }
