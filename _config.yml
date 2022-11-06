@@ -261,7 +261,7 @@ defaults:
       layout: single
       author_profile: false
       share: true
-  # Ejercicios_gym
+  # _Ejercicios_gym
   - scope:
       path: ""
       type: Ejercicios_gym
