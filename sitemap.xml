@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/Ejercicios_gym/pecho/</loc>
+</url>
+<url>
+<loc>https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/Ejercicios_gym/piernas/</loc>
+</url>
+<url>
 <loc>https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/docs/quick-start-guide/</loc>
 <lastmod>2021-06-07T08:48:05-04:00</lastmod>
 </url>
@@ -390,6 +396,12 @@
 </url>
 <url>
 <loc>https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/recipes/peanut-butter-cookies/</loc>
+</url>
+<url>
+<loc>https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/_pages/404/</loc>
+</url>
+<url>
+<loc>https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/Ejercicios_gym/</loc>
 </url>
 <url>
 <loc>https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/about/</loc>
