@@ -6,8 +6,8 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
   actions:
-    - label: "<i class='fas fa-download'></i> Descubre como"
-      url: "/docs/quick-start-guide/"
+    - label: "<i class='fas fa-download'></i> Ir directo al informe"
+      url: "/post\ formats/informe/"
 excerpt: >
   Práctica de la asignatura DMSI.<br />
   <small><a href="https://campusingenieriaytecnologia2223.ull.es/user/profile.php?id=1744">Jorge Ruiz Padilla</a></small>
