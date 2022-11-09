@@ -6,15 +6,15 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
   actions:
-    - label: "<i class='fas fa-download'></i> Install now"
+    - label: "<i class='fas fa-download'></i> Descubre como"
       url: "/docs/quick-start-guide/"
 excerpt: >
-  Una práctica para una asignatura de informática.<br />
-  <small><a href="https://www.ull.es/apps/guias/guias/view_teacher_niu/967/crguezl/">El profesor</a></small>
+  Práctica de la asignatura DMSI.<br />
+  <small><a href="https://campusingenieriaytecnologia2223.ull.es/user/profile.php?id=1744">Jorge Ruiz Padilla</a></small>
 feature_row:
   - image_path: /assets/images/mm-customizable-feature.png
     alt: "customizable"
-    title: "Posts"
+    title: "Customizable"
     excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
     url: "/docs/configuration/"
     btn_class: "btn--primary"

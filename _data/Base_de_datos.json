@@ -2,6 +2,7 @@
     "Informacion": {
         "Nombre": "Jorge",
         "Apellidos": "Ruiz Padilla",
-        "Edad": 21
+        "Edad": 21,
+        "Vive": "Los Abrigos"
     }
 }
