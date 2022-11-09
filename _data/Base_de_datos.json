@@ -1,8 +1,8 @@
 {
-    "Informacion": {
-        "Nombre": "Jorge",
-        "Apellidos": "Ruiz Padilla",
-        "Edad": 21,
-        "Vive": "Los Abrigos"
-    }
+    "Nombre": "Jorge",
+    "Apellidos": "Ruiz Padilla",
+    "Edad": 21,
+    "Vive": "Los Abrigos",
+    "Hobby": "Ir al gimnasio",
+    "No_le_gusta": "Programar"
 }
