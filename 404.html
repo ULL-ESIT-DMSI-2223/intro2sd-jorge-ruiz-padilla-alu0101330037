@@ -9,24 +9,22 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Layout: Excerpt (Generated) - Introducción al Desarrollo de Sistemas</title>
-<meta name="description" content="This is the post content. Archive-index pages should display an auto-generated excerpt of this content.">
+<!-- begin _includes/seo.html --><title>Error 404 - Introducción al Desarrollo de Sistemas</title>
+<meta name="description" content="Pagina no encontrada">
 
 
   <meta name="author" content="Jorge Ruiz">
   
-  <meta property="article:author" content="Jorge Ruiz">
-  
 
 
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Introducción al Desarrollo de Sistemas">
-<meta property="og:title" content="Layout: Excerpt (Generated)">
-<meta property="og:url" content="https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/layout/uncategorized/layout-excerpt-generated/">
+<meta property="og:title" content="Error 404">
+<meta property="og:url" content="https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/404.html">
 
 
-  <meta property="og:description" content="This is the post content. Archive-index pages should display an auto-generated excerpt of this content.">
+  <meta property="og:description" content="Pagina no encontrada">
 
 
 
@@ -35,9 +33,9 @@
 
 
   <meta name="twitter:site" content="@mmistakes">
-  <meta name="twitter:title" content="Layout: Excerpt (Generated)">
-  <meta name="twitter:description" content="This is the post content. Archive-index pages should display an auto-generated excerpt of this content.">
-  <meta name="twitter:url" content="https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/layout/uncategorized/layout-excerpt-generated/">
+  <meta name="twitter:title" content="Error 404">
+  <meta name="twitter:description" content="Pagina no encontrada">
+  <meta name="twitter:url" content="https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/404.html">
 
   
     <meta name="twitter:card" content="summary">
@@ -50,8 +48,6 @@
 
 
 
-  <meta property="article:published_time" content="2012-03-14T00:00:00-04:00">
-
 
 
 
@@ -61,7 +57,7 @@
   
 
 
-<link rel="canonical" href="https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/layout/uncategorized/layout-excerpt-generated/">
+<link rel="canonical" href="https://mmistakes.github.io/intro2sd-jorge-ruiz-padilla-alu0101330037/404.html">
 
 
 
@@ -290,35 +286,17 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Layout: Excerpt (Generated)">
-    <meta itemprop="description" content="This is the post content. Archive-index pages should display an auto-generated excerpt of this content.">
-    <meta itemprop="datePublished" content="2012-03-14T00:00:00-04:00">
+    <meta itemprop="headline" content="Error 404">
+    <meta itemprop="description" content="Pagina no encontrada">
+    
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">Layout: Excerpt (Generated)
+          <h1 id="page-title" class="page__title" itemprop="headline">Error 404
 </h1>
           
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
 
 
         </header>
@@ -326,11 +304,74 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>This is the post content. Archive-index pages should display an auto-generated excerpt of this content.</p>
+        <h1 id="error-página-no-encontrada">Error: Página no encontrada</h1>
 
-<!--more-->
+<h2 id="no-existe-lo-que-estas-buscando-manín">No existe lo que estas buscando manín</h2>
 
-<p>Be sure to test the formatting of the auto-generated excerpt, to ensure that it doesn’t create any layout problems.</p>
+<div>
+<style>
+img, #quote, #comment-dog {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#author {
+  float: right;
+}
+</style>
+
+
+<div id="comment-dog"></div>
+<div id="dog"></div>
+<br />
+<div id="quote"></div>
+<div id="author"></div>
+
+
+<script type="text/javascript">
+
+/*
+  https://docs.thedogapi.com/ 
+*/
+const URL = 'https://api.thedogapi.com/v1/images/search?size=full';
+
+(async function() {
+  try {
+    
+    // DOG 
+    let divTitle = document.getElementById("comment-dog");
+    
+    let divdog = document.getElementById("dog");
+    let response = await fetch(URL, {
+       headers: {
+       'x-api-key': "56a4f1cc-7f60-468d-9dba-e4b6f04b7c7d"
+       }
+    });
+    let dog = await response.json();
+    // console.log(dog);   
+    let img = document.createElement("img");
+    let title = document.createElement("h2");
+    title.innerText = "En lo que piensas en qué buscar te dejo la imagen de un perrito";   
+    divTitle.append(title);
+    img.src = dog[0].url;
+    divdog.appendChild(img);   
+
+    // QUOTE
+    const quoteDiv = document.getElementById("quote");
+    const authorDiv = document.getElementById("author");
+    
+    const quoteRes = await fetch('https://api.quotable.io/random');
+    const data = await quoteRes.json();
+    quoteDiv.innerHTML = `<h2>${data.content}</h2>`;
+    authorDiv.innerHTML = `<h3>—${data.author}</h3>`;
+  }
+  catch(e) { 
+    console.log(e);
+  }
+})();
+</script>
+
+</div>
 
         
       </section>
@@ -338,261 +379,21 @@
       <footer class="page__meta">
         
         
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/intro2sd-jorge-ruiz-padilla-alu0101330037/tags/#content" class="page__taxonomy-item" rel="tag">content</a><span class="sep">, </span>
-    
-      <a href="/intro2sd-jorge-ruiz-padilla-alu0101330037/tags/#excerpt" class="page__taxonomy-item" rel="tag">excerpt</a><span class="sep">, </span>
-    
-      <a href="/intro2sd-jorge-ruiz-padilla-alu0101330037/tags/#layout" class="page__taxonomy-item" rel="tag">layout</a>
-    
-    </span>
-  </p>
-
-
-
-
-  
-
-
-  
-
-  <p class="page__taxonomy">
-    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
-    <span itemprop="keywords">
-    
-      <a href="/intro2sd-jorge-ruiz-padilla-alu0101330037/categories/#layout" class="page__taxonomy-item" rel="tag">Layout</a><span class="sep">, </span>
-    
-      <a href="/intro2sd-jorge-ruiz-padilla-alu0101330037/categories/#uncategorized" class="page__taxonomy-item" rel="tag">Uncategorized</a>
-    
-    </span>
-  </p>
 
 
         
-
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2012-03-14T00:00:00-04:00">March 14, 2012</time></p>
 
 
       </footer>
 
-      <section class="page__share">
-  
-
-  <a href="https://twitter.com/intent/tweet?via=mmistakes&text=Layout%3A+Excerpt+%28Generated%29%20https%3A%2F%2Fmmistakes.github.io%2Fintro2sd-jorge-ruiz-padilla-alu0101330037%2Flayout%2Funcategorized%2Flayout-excerpt-generated%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmmistakes.github.io%2Fintro2sd-jorge-ruiz-padilla-alu0101330037%2Flayout%2Funcategorized%2Flayout-excerpt-generated%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmmistakes.github.io%2Fintro2sd-jorge-ruiz-padilla-alu0101330037%2Flayout%2Funcategorized%2Flayout-excerpt-generated%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
+      
 
       
-  <nav class="pagination">
-    
-      <a href="/intro2sd-jorge-ruiz-padilla-alu0101330037/layout/uncategorized/layout-excerpt-defined/" class="pagination--pager" title="Layout: Excerpt (Defined)
-">Previous</a>
-    
-    
-      <a href="/intro2sd-jorge-ruiz-padilla-alu0101330037/layout-author-override/" class="pagination--pager" title="Layout: Author Override
-">Next</a>
-    
-  </nav>
-
     </div>
 
     
   </article>
 
-  
-  
-    <div class="page__related">
-      <div align="center" style="margin: 1em 0;">
-        <ins class="adsbygoogle"
-              style="display:block; border-bottom: initial;"
-              data-ad-client="ca-pub-7328585512091257"
-              data-ad-slot="3049671934"
-              data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
-      </div>
-      <h2 class="page__related-title">You May Also Enjoy</h2>
-      <div class="grid__wrapper">
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/intro2sd-jorge-ruiz-padilla-alu0101330037/post/post-future-date/" rel="permalink">Post: Future Date
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">This post lives in the future and is dated Fri Dec 31 00:00:00 9999. When building Jekyll with the --future flag it should appear.
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/intro2sd-jorge-ruiz-padilla-alu0101330037/post%20formats/informe/" rel="permalink">Informe
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          4 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-  Resumen capítulo 1
-  Despliegue el sitio Web en GitHub pages usando Jekyll
-  Despliegue en Netlify
-  Collection en Jekyll
-  Cambio de parámetros en _confi...</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/intro2sd-jorge-ruiz-padilla-alu0101330037/jekyll/post-exclude-search/" rel="permalink">Exclude Post from Search Index
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">This post should not appear in the search index because it has the following YAML Front Matter:
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/intro2sd-jorge-ruiz-padilla-alu0101330037/layout/uncategorized/layout-header-video/" rel="permalink">Layout: Header Video
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          less than 1 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">This post should display a header with a responsive video, if the theme supports it.
-
-</p>
-  </article>
-</div>
-
-        
-      </div>
-    </div>
   
   
 </div>
@@ -716,8 +517,6 @@ $(document).ready(function () {
   });
 });
 </script>
-
-
 
 
 
