@@ -581,6 +581,12 @@ var store = [{
         "url": "/intro2sd-jorge-ruiz-padilla-alu0101330037/post%20formats/informe/",
         "teaser": null
       },{
+        "title": "Informe",
+        "excerpt":"   Resumen capítulo 2   Creación del archivo search.json   Creación del archivo search.js   Creación del archivo search.md   Creación del archivo fetch.js   Resumen capítulo 2   El capítulo 2 del libro Developing Information Systems se centra en el diseño de los sistemas de información. El capítulo explica cómo los desarrolladores de sistemas de información pueden utilizar una variedad de herramientas y técnicas para diseñar un sistema de información eficaz. El capítulo examina el análisis estructurado, las herramientas de modelado de objetos, los lenguajes de programación de bases de datos y los lenguajes de programación orientados a objetos. El capítulo también discute el proceso de diseño de un sistema de información y cómo los desarrolladores pueden aplicar el modelo de ciclo de vida del software en el desarrollo de sistemas de información. El capítulo también cubre los principios de diseño de sistemas de información, incluida la modularidad, la reutilización de código, la estandarización y la arquitectura de los sistemas de información. Finalmente, el capítulo explica cómo los desarrolladores pueden utilizar una variedad de herramientas para crear prototipos de sistemas de información.   Creación del archivo search.json    Creación del archivo search.js    Creación del archivo search.md    Creación del archivo fetch.js  Este fichero contiene tantas lineas que enseñar capturas de pantalla sería bastante largo asi que publico el link al archivo para que se pueda ver bien el código  ","categories": ["Post Formats"],
+        "tags": ["Post Formats","readability","standard"],
+        "url": "/intro2sd-jorge-ruiz-padilla-alu0101330037/post%20formats/informe/",
+        "teaser": null
+      },{
         "title": "Post: Future Date",
         "excerpt":"This post lives in the future and is dated Fri Dec 31 00:00:00 9999. When building Jekyll with the --future flag it should appear.  ","categories": ["Post"],
         "tags": [],
